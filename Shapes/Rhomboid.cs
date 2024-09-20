@@ -4,8 +4,9 @@ namespace Shapes
 {
     internal class Rhomboid : Polygon
     {
-        private double diagonal1;
-        private double diagonal2;
+        private double diagonal1, diagonal2;
+        public double Diagonal1 { get { return diagonal1; } }
+        public double Diagonal2 { get { return diagonal2; } }
 
         public Rhomboid(double diagonal1, double diagonal2)
         {
