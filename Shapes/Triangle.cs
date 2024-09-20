@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace Shapes
 {
@@ -13,7 +12,7 @@ namespace Shapes
             numberOfSides = 3;
             this.b = b;
             this.height = height;
-            this.alpha = alpha;
+            this.alpha = Math.Min(b, alpha);
             CalculateSides();
         }
 
