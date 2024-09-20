@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    internal class Program
+    internal class Rhombus
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        private double 
     }
 }
