@@ -22,5 +22,10 @@ namespace Shapes
         {
             return side1 * side2;
         }
+
+        public override double Perimeter()
+        {
+            return side1 * 2 + side2 * 2;
+        }
     }
 }

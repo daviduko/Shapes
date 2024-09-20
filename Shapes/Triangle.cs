@@ -8,19 +8,24 @@ namespace Shapes
 {
     internal class Triangle : Polygon
     {
-        private double side1, side2, side3;
+        private double b, height, alpha;
 
-        public Triangle(double side1, double side2, double side3)
+        public Triangle(double b, double height, double alpha)
         {
             numberOfSides = 3;
-            this.side1 = side1;
-            this.side2 = side2;
-            this.side3 = side3;
+            this.b = b;
+            this.height = height;
+            this.alpha = alpha;
         }
 
         public override double Area()
         {
-            return base.Area();
+            return (b * height) / 2;
+        }
+
+        public override double Perimeter()
+        {
+            return base.Perimeter();
         }
     }
 }
