@@ -94,8 +94,8 @@ The diagram has:
     {diagram.GetNumberOf(typeof(Rectangle))} number of rectangles
     {diagram.GetNumberOf(typeof(Square))} number of squares
 
-Total area: {}u^2
-Total perimeter: {}u");
+Total area: {diagram.GetTotalArea()}u^2
+Total perimeter: {diagram.GetPerimeter()}u");
         }
 
         static double AskForValue(string valueName)

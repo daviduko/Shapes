@@ -64,6 +64,24 @@ namespace Shapes
             }
         }
 
+        public double GetTotalArea()
+        {
+            double totalArea = 0;
+
+            shapes.ForEach(shape => { totalArea += shape.Area(); });
+
+            return totalArea;
+        }
+
+        public double GetPerimeter()
+        {
+            double totalPerimeter = 0;
+
+            shapes.ForEach(shape => { totalPerimeter += shape.Perimeter(); });
+
+            return totalPerimeter;
+        }
+
         public int GetNumberOf(Type shapeType)
         {
             int count = 0;
