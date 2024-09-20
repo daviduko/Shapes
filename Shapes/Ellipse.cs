@@ -4,22 +4,22 @@ namespace Shapes
 {
     internal class Ellipse : Shape2D
     {
-        private double minorAxis, majorAxis;
+        private double axis1, axis2;
 
-        public Ellipse(double minorAxis, double majorAxis)
+        public Ellipse(double axis1, double axis2)
         {
-            this.minorAxis = minorAxis;
-            this.majorAxis = majorAxis;
+            this.axis1 = axis1;
+            this.axis2 = axis2;
         }
 
         public override double Area()
         {
-            return Math.PI * minorAxis * majorAxis;
+            return Math.PI * axis1 * axis2;
         }
 
         public override double Perimeter()
         {
-            return 2 * Math.PI * Math.Sqrt(((Math.Pow(minorAxis, 2)) + (Math.Pow(majorAxis, 2))) / 2);
+            return 2 * Math.PI * Math.Sqrt(((Math.Pow(axis1, 2)) + (Math.Pow(axis2, 2))) / 2);
         }
     }
 }
